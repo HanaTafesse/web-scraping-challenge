@@ -13,15 +13,15 @@
 
 <body style="background-color:#EFE1CE;">
   <div class="container">
-     <div class="jumbotron text-center">
-      <h1>Mission to Mars</h1>
-      <div class="jumbotron text-center" style="background-image: url(https://th.bing.com/th/id/R.739f9e4394798dbe62432af59a3def83?rik=lL3gMQMxMennNQ&pid=ImgRaw&r=0);">
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-  </div>
-     <div class="row">
+       <div class="jumbotron text-center">
+         <h1>Mission to Mars</h1>
+           <div class="jumbotron text-center" style="background-image: url(https://th.bing.com/th/id/R.739f9e4394798dbe62432af59a3def83?rik=lL3gMQMxMennNQ&pid=ImgRaw&r=0);">
+             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+           </div>
+       <div class="row">
       <div class="col">
-        <h2 align ="left">Latest Mars News</h2>
-        <h3 align="left">{{ listings.news_title }}</h3>
+        <h3 align="left">Latest Mars News</h3>
+        <h4 align="left">{{ listings.news_title }}</h4>
         <p align="left">{{listings.news_p}}</p>
       </div>
      </div>
@@ -34,25 +34,22 @@
       <div class="col-md-6">
         <h4>Mars Facts</h4>
         {{listings.html_Mars_facts|safe}}
-        <style>
-        table {
-          border-collapse: collapse;
-        }
-        </style>
-       </div> 
+      </div>
+      </div>
+     
 
     <div class="row">
       <div class="col text-center">
-        <h2>Mars Hemispheres</h2>
+        <h4 style="text-align:center">Mars Hemispheres</h4>
       </div>
     </div>
+
     <div class="row mb-5">
       {% for item in listings.mars_hemispheres %}
-      <div class="col-md-3">
-        <div><img src="{{item.img_url}}" alt="" style="width: 100%;"></div>
-
-        <div>{{item.title}}</div>
-      </div>
+       <div class="col-md-3">
+         <div><img src="{{item.img_url}}" alt="" style="width: 100%;"></div>
+           <div>{{item.title}}</div>
+       </div>
       {% endfor %}
     </div>
 
