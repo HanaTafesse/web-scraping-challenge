@@ -6,52 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Mars Data</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 
-<body style="background-color:#EFE1CE;">
-  <div class="container">
-       <div class="jumbotron text-center">
-         <h1>Mission to Mars</h1>
+<body>
+  <div class="container" style="background-color:#E6EDf5">
+         <div class="title" style="color:#5A2017" >
+            <h1 style="text-align:center"><strong>Mission to Mars</strong></h1>
+         </div>
            <div class="jumbotron text-center" style="background-image: url(https://th.bing.com/th/id/R.739f9e4394798dbe62432af59a3def83?rik=lL3gMQMxMennNQ&pid=ImgRaw&r=0);">
              <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
            </div>
        <div class="row">
       <div class="col">
-        <h3 align="left">Latest Mars News</h3>
-        <h4 align="left">{{ listings.news_title }}</h4>
-        <p align="left">{{listings.news_p}}</p>
+        <h3 style="text-align:left"> <strong>Latest Mars News</strong></h3>
+        <h4 style="text-align:left">{{ listings.news_title }}</h4>
+        <p style="text-align:left">{{listings.news_p}}</p>
       </div>
      </div>
 
     <div class="row">
       <div class="col-md-6">
-        <h2>Featured Mars Image</h2>
+        <h3> <strong>Featured Mars Image</strong></h3>
         <img src="{{listings.featured_image_url}}" alt="Featured Mars Image" style="width:100%;">
       </div>
       <div class="col-md-6">
-        <h4>Mars Facts</h4>
-        {{listings.html_Mars_facts|safe}}
+        <h4> <strong>Mars Facts</strong></h4>
+        <table class="table table-bordered border-primary">{{listings.html_Mars_facts|safe}}</table>
+        
+        <style>
+          tr:nth-child(even) {
+            background-color: #E5E7E9;
+          }
+          tr:nth-child(odd) {
+            background-color: #F8F9F9;
+          }
+          </style>
+
       </div>
       </div>
      
 
-    <div class="row">
-      <div class="col text-center">
-        <h4 style="text-align:center">Mars Hemispheres</h4>
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      {% for item in listings.mars_hemispheres %}
-       <div class="col-md-3">
-         <div><img src="{{item.img_url}}" alt="" style="width: 100%;"></div>
-           <div>{{item.title}}</div>
+       <div class="row">
+         <div class="col text-center">
+           <h3 style="text-align:center"> <strong>Mars Hemispheres</strong></h3>
+         </div>
        </div>
-      {% endfor %}
-    </div>
+
+            <div class="row mb-5">
+               {% for item in listings.mars_hemispheres %}
+                 <div class="col-md-3">
+                    <div><img src="{{item.img_url}}" alt="" style="width: 100%;"></div>
+             <div>{{item.title}}</div>
+               </div>
+              {% endfor %}
+            </div>
 
   </div>
       <footer>
