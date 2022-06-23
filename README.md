@@ -11,11 +11,11 @@ Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, an
 
 [Missions_to_Mars.ipynb](/Missions_to_Mars/mission_to_mars.ipynb)
 
-### NASA Mars News
+### NASA Mars News And Paragraph
 
 * Scrape the [Mars News Site](https://redplanetscience.com/) and collect the latest News Title and Paragraph Text. Assign the text to variables that you can reference later.
 
-![Latest latest News Title and Paragraph](/Missions_to_Mars/Missions_to_Mars_Images/Latest_Mars_News.png)
+![Latest News Title and Paragraph](/Missions_to_Mars/Missions_to_Mars_Images/Latest_Mars_News.png)
 
 ### JPL Mars Space Images—Featured Image
 
