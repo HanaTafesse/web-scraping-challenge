@@ -9,7 +9,7 @@ Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, an
 
 * Create a Jupyter Notebook file called `mission_to_mars.ipynb`. Use this file to complete all your scraping and analysis tasks. The following information outlines what you need to scrape.
 
-[Missions_to_Mars](/Missions_to_Mars/mission_to_mars.ipynb)
+[Missions_to_Mars.ipynb](/Missions_to_Mars/mission_to_mars.ipynb)
 
 ### NASA Mars News
 
