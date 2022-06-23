@@ -1,4 +1,3 @@
-# web-scraping-challenge
 
 # Missions_to_Mars_full_page
 
@@ -48,11 +47,11 @@ Use MongoDB with Flask templating to create a new HTML page that displays all th
 
 * Start by converting your Jupyter notebook into a Python script called `scrape_mars.py` by using a function called `scrape`. This function should  execute all your scraping code from above and return one Python dictionary containing all the scraped data.
 
-* ![MongoDB/scrape_mars.py](/Missions_to_Mars/scrape_mars.py)
+* [MongoDB/scrape_mars.py](/Missions_to_Mars/scrape_mars.py)
 
 
 * Create a template HTML file called `index.html` that will take the Mars data dictionary and display all the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
 
-![Flask Application/app.py](/Missions_to_Mars/app.py)
+[Flask Application/app.py](/Missions_to_Mars/app.py)
 
-![Index Template/index.html](/Missions_to_Mars/templates/index.html)
+[Index Template/index.html](/Missions_to_Mars/templates/index.html)
