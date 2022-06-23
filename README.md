@@ -1,8 +1,8 @@
 # web-scraping-challenge
 
-# Missions to Mars full page
+# Missions_to_Mars_full_page
 
-![Mars_Data_full_page](/Missions_to_Mars/Missions_to_Mars_Images/Mars_Data_full_page.png)
+![Missions_to_Mars_full_page](/Missions_to_Mars/Missions_to_Mars_Images/Missions_to_Mars_full_page.png)
 
 ## Part  1: Scraping
 
